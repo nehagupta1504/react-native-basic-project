@@ -40,7 +40,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
             color: isDarkMode ? Colors.white : Colors.black,
           },
         ]}>
-        {title}
+        Run Your React Native App on Your Device: A Step-by-Step Guide
       </Text>
       <Text
         style={[
@@ -49,7 +49,20 @@ function Section({children, title}: SectionProps): React.JSX.Element {
             color: isDarkMode ? Colors.light : Colors.dark,
           },
         ]}>
-        {children}
+        This is my first mobile application. I am so excited to see how it
+        works.
+      </Text>
+      <Text>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+        praesentium assumenda quae eius nihil. Facilis ab, quae repellat atque
+        dolores voluptates obcaecati iusto, voluptas amet corporis aspernatur et
+        a corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Esse praesentium assumenda quae eius nihil. Facilis ab, quae repellat
+        atque dolores voluptates obcaecati iusto, voluptas amet corporis
+        aspernatur et a corrupti. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Esse praesentium assumenda quae eius nihil. Facilis
+        ab, quae repellat atque dolores voluptates obcaecati iusto, voluptas
+        amet corporis aspernatur et a corrupti.
       </Text>
     </View>
   );
@@ -77,19 +90,8 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+            Edit <Text style={styles.highlight}>App.tsx</Text>
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
